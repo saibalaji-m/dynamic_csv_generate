@@ -20,8 +20,8 @@ const csvWriter = require('csv-writer').createObjectCsvWriter;
 const { randomInt } = require('crypto');
 
 // update below value with line no: 12 & 13
-const AssignedUserID = '123456'
-const AssignedUserEmail = 'test12345@taskel.it'
+const AssignedUserID = 'employee_code100_2447'
+const AssignedUserEmail = 'neworg-240701-6344_employee_code100@green.io'
 
 function getRandomNumber(max) {
     return Math.floor(max);
@@ -129,5 +129,5 @@ function writeToCsv(filename, data) {
 
 // Generate 10,000 random records and write to a CSV file
 // const randomData = generateRandomData(60000);
-const randomData = generateRandomData(10000);
-writeToCsv('Device_Random_data_psrApi_1.csv', randomData);
+const randomData = generateRandomData(3);
+writeToCsv('Device_Random_data_psrengg_10k.csv', randomData);
